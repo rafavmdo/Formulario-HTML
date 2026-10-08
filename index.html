@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input required type="text" id="nome" placeholder="Ex: João Silva">
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input required type="text" id="sobrenome">
+
+            <br>
+            <br>
+
+            <label for="email">Email:</label>
+            <input required type="email" id="email">
+
+            <label for="telefone">Telefone:</label>
+            <input required type="tel" id="telefone">
+
+            <br>
+            <br>
+
+            <label for="senha">Senha:</label>
+            <input required type="password" id="senha" min="8">
+
+            <br>
+            <br>
+
+            <label for="datadenascimento">Data de Nascimento:</label>
+            <input type="date" id="datadenascimento">
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" min="14" max="100">
+
+
+           
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha do Curso</legend>
+            
+            <input required type="radio" name="curso" id="html" value="html">
+            <label for="html">HTML E CSS</label> 
+            
+            <input required type="radio" name="curso" id="javascript" value="javascript">
+            <label for="javascript">JavaScript</label> 
+
+            <input required type="radio" name="curso" id="python" value="python">
+            <label for="python">Python</label>
+
+            <input required type="radio" name="curso" id="java" value="java">
+            <label for="java">Java</label>
+
+            <input required type="radio" name="curso" id="banco de dados" value="banco de dados">
+            <label for="banco de dados">Banco de Dados</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Modalidade</legend>
+            <input required type="radio" name:"modalidade" id="presencial" value="presencial">
+            <label for="presencial">Presencial</label>
+
+            <input required type="radio" name:"modalidade" id="online" value="online">
+            <label for="online">Online</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Turno</legend>
+            <input required type="radio" name:"turno" id="manha" value="manha">
+            <label for="manha">Manhã</label>
+
+            <input required type="radio" name:"turno" id="tarde" value="tarde">
+            <label for="tarde">Tarde</label>
+
+            <input required type="radio" name:"turno" id="noite" value="noite">
+            <label for="noite">Noite</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Nivel de conhecimento</legend>
+            <select id="nivel" name="nivel" required>
+                <option value="">Selecione seu nível</option>
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="avancado">Avançado</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tecnologias conhecidas</legend>
+            <input required type="checkbox" name="tecnologias" id="html" value="html">
+            <label for="html">HTML</label>
+
+            <input required type="checkbox" name="tecnologias" id="css" value="css">
+            <label for="css">CSS</label>
+            
+            <input required type="checkbox" name="tecnologias" id="javascript" value="javascript">
+            <label for="javascript">JavaScript</label>
+
+            <input required type="checkbox" name="tecnologias" id="python" value="python">
+            <label for="python">Python</label>
+
+            <input required type="checkbox" name="tecnologias" id="java" value="java">
+            <label for="java">Java</label>
+
+            <input required type="checkbox" name="tecnologias" id="csharp" value="csharp">
+            <label for="csharp">C#</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Localização</legend>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="">Selecione seu estado</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="es">Espírito Santo</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sobre o Aluno</legend>
+            <label for="sobre">Por que você deseja fazer este curso?</label>
+            <br>
+            <textarea id="sobre" name="sobre" rows="4" cols="50" required min="20"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Termos de Inscrição</legend>
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Aceito os termos de inscrição</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        
+
+    </form>
+</body>
+</html>
