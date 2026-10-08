@@ -1,0 +1,115 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: #fff5f5;
+        color: #4a0000;
+        margin: 0;
+        padding: 30px;
+    }
+
+        form {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(150, 0, 0, 0.2);
+        }
+
+        fieldset {
+            border: 2px solid #c62828;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fffafa;
+        }
+
+        legend {
+            background-color: #c62828;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+
+        label {
+            font-weight: bold;
+            color: #7f0000;
+            margin-right: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            border: 2px solid #e57373;
+            border-radius: 7px;
+            padding: 9px;
+            margin: 5px 10px 10px 0;
+            background-color: #ffffff;
+            color: #4a0000;
+            font-size: 14px;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        input[type="password"]:focus,
+        input[type="date"]:focus,
+        input[type="number"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #b71c1c;
+            box-shadow: 0 0 5px rgba(183, 28, 28, 0.4);
+        }
+
+   
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #c62828;
+            margin-right: 5px;
+        }
+
+   
+        textarea {
+            width: 90%;
+            resize: vertical;
+        }
+
+
+        button {
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: 0.2s;
+        }
+
+ 
+button[type="submit"] {
+    background-color: #c62828;
+    color: white;
+}
+
+    button[type="submit"]:hover {
+        background-color: #8e0000;
+    }
+
+  
+    button[type="reset"] {
+        background-color: #ffcdd2;
+        color: #8e0000;
+    }
+
+button[type="reset"]:hover {
+    background-color: #ef9a9a;
+}
+  
